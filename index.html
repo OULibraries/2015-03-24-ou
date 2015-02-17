@@ -15,7 +15,6 @@ helper: ["Mark Laufersweiler", "Mark Stacy"]
 contact: lmc@ou.edu
 etherpad:  https://etherpad.mozilla.org/2015-03-24-ou 
 eventbrite: 15640161143 
----
 <!--
   HEADER
 
@@ -34,7 +33,7 @@ eventbrite: 15640161143
 -->
 {% if page.eventbrite %}
 <iframe
-  src="//www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
+  src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
   frameborder="0"
   width="100%"
   height="206px"
@@ -133,8 +132,8 @@ eventbrite: 15640161143
 -->
 <h2>Schedule</h2>
 
-<div class="row-fluid">
-  <div class="span6">
+<div class="row">
+  <div class="col-md-6">
     <h3>Day 1</h3>
     <table class="table table-striped">
       <tr> <td>09:00</td>  <td>Automating tasks with the Unix shell</td> </tr>
@@ -145,7 +144,7 @@ eventbrite: 15640161143
       <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
     </table>
   </div>
-  <div class="span6">
+  <div class="col-md-6">
     <h3>Day 2</h3>
     <table class="table table-striped">
       <tr> <td>09:00</td>  <td>Version control with Git</td> </tr>
@@ -190,8 +189,8 @@ eventbrite: 15640161143
   2. Some workshops will delete SQL.
   3. Please make sure the list of topics is synchronized with what you
      intend to teach.
-  4. You may need to move the div's with class="span6" around inside
-     the div's with class="row-fluid" to balance the multi-column layout.
+  4. You may need to move the div's with class="col-md-6" around inside
+     the div's with class="row" to balance the multi-column layout.
 
   This is one of the places where people frequently make mistakes, so
   please preview your site before committing, and make sure to run
@@ -199,8 +198,8 @@ eventbrite: 15640161143
 -->
 <h2>Syllabus</h2>
 
-<div class="row-fluid">
-  <div class="span6">
+<div class="row">
+  <div class="col-md-6">
     <h3>The Unix Shell</h3>
     <ul>
       <li>Files and directories</li>
@@ -212,7 +211,7 @@ eventbrite: 15640161143
       <li><a href="{{site.swc_lessons}}/ref/01-shell.html">Reference...</a></li>
     </ul>
   </div>
-  <div class="span6">
+  <div class="col-md-6">
     <h3>Programming in Python</h3>
     <ul>
       <li>Using libraries</li>
@@ -225,8 +224,8 @@ eventbrite: 15640161143
       <li><a href="{{site.swc_lessons}}/ref/03-python.html">Reference...</a></li>
     </ul>
   </div>
-  <!-- 
-  <div class="span6">
+  <!--
+  <div class="col-md-6">
     <h3>Programming in R</h3>
     <ul>
       <li>Working with vectors and data frames</li>
@@ -240,8 +239,8 @@ eventbrite: 15640161143
   -->
 </div>
 
-<div class="row-fluid">
-  <div class="span6">
+<div class="row">
+  <div class="col-md-6">
     <h3>Version Control with Git</h3>
     <ul>
       <li>Creating a repository</li>
@@ -255,8 +254,7 @@ eventbrite: 15640161143
       <li><a href="{{site.swc_lessons}}/ref/02-git.html">Reference...</a></li>
     </ul>
   </div>
-  <!--
-  <div class="span6">
+  <div class="col-md-6">
     <h3>Managing Data with SQL</h3>
     <ul>
       <li>Reading and sorting data</li>
@@ -313,8 +311,8 @@ eventbrite: 15640161143
     exclamation mark), then hitting Return to return to the shell.
   </p>
 
-  <div class="row-fluid">
-    <div class="span4">
+  <div class="row">
+    <div class="col-md-4">
       <h4>Windows</h4>
       <p>
 	<code>nano</code> is the editor installed by the Software
@@ -330,7 +328,7 @@ eventbrite: 15640161143
 	this.
       </p>
     </div>
-    <div class="span4">
+    <div class="col-md-4">
       <h4>Mac OS X</h4>
       <p>
 	We recommend
@@ -340,7 +338,7 @@ eventbrite: 15640161143
 	which should be pre-installed.
       </p>
     </div>
-    <div class="span4">
+    <div class="col-md-4">
       <h4>Linux</h4>
       <p>
 	<a href="http://kate-editor.org/">Kate</a> is one option for
@@ -359,8 +357,8 @@ eventbrite: 15640161143
     tasks more quickly.
   </p>
 
-  <div class="row-fluid">
-    <div class="span4">
+  <div class="row">
+    <div class="col-md-4">
       <h4>Windows</h4>
       <p>
 	Install Git for Windows by download and running
@@ -369,15 +367,10 @@ eventbrite: 15640161143
       </p>
       <h4>Software Carpentry Installer</h4>
       <p><em>This installer requires an active internet connection.</em></p>
-      <p>After installing Python and Git Bash:</p>
+      <p>After Git Bash:</p>
       <ul>
 	<li>
           Download the <a href="{{site.swc_installer}}">installer</a>.
-	</li>
-	<li>
-          If the file opens directly in the browser
-          select <strong>File&rarr;Save Page As</strong> to download it
-          to your computer.
 	</li>
 	<li>
           Double click on the file to run it.
@@ -389,7 +382,7 @@ eventbrite: 15640161143
 	<a href="https://github.com/swcarpentry/windows-installer">https://github.com/swcarpentry/windows-installer</a>.
       </p>
     </div>
-    <div class="span4">
+    <div class="col-md-4">
       <h4>Mac OS X</h4>
       <p>
 	The default shell in all versions of Mac OS X is bash, so no
@@ -399,7 +392,7 @@ eventbrite: 15640161143
 	Terminal in your dock for this workshop.
       </p>
     </div>
-    <div class="span4">
+    <div class="col-md-4">
       <h4>Linux</h4>
       <p>
 	The default shell is usually <code>bash</code>, but if your
@@ -409,7 +402,7 @@ eventbrite: 15640161143
       </p>
     </div>
   </div>
-<div> <!-- End of 'shell' section. -->  
+<div> <!-- End of 'shell' section. -->
 
 <div> <!-- Start of 'Git' section. -->
   <h3>Git</h3>
@@ -421,15 +414,15 @@ eventbrite: 15640161143
     on <a href="https://github.com/">github.com</a>.
   </p>
 
-  <div class="row-fluid">
-    <div class="span4">
+  <div class="row">
+    <div class="col-md-4">
       <h4>Windows</h4>
       <p>
 	Git should be installed on your computer as part of your Bash
 	install (described above).
       </p>
     </div>
-    <div class="span4">
+    <div class="col-md-4">
       <h4>Mac OS X</h4>
       <p>
 	<strong>For OS X 10.8 and higher</strong>, install Git for Mac
@@ -444,7 +437,7 @@ eventbrite: 15640161143
 	Leopard installer for 10.6-10.7.
       </p>
     </div>
-    <div class="span4">
+    <div class="col-md-4">
       <h4>Linux</h4>
       <p>
 	If Git is not already available on your machine you can try to
@@ -466,8 +459,15 @@ eventbrite: 15640161143
     a bit difficult, so we recommend an all-in-one installer.
   </p>
 
-  <div class="row-fluid">
-    <div class="span4">
+    <p>
+      Regardless of how you choose to install it,
+      <strong>please make sure you install Python version 2.x and not version 3.x</strong>
+      (e.g., 2.7 is fine but not 3.4).
+      Python 3 introduced changes that will break some of the code we teach during the workshop.
+    </p>
+
+  <div class="row">
+    <div class="col-md-4">
       <h4>Windows</h4>
       <ul>
 	<li>
@@ -475,13 +475,14 @@ eventbrite: 15640161143
           install <a href="https://store.continuum.io/cshop/anaconda/">Anaconda</a>.
 	</li>
 	<li>
-          Use all of the defaults for installation
-          <em>except</em> make sure to check <strong>Make Anaconda the
-            default Python</strong>.
+          Download the default Python 2 installer (do not follow the link to version 3).
+	  Use all of the defaults for installation
+          <em>except</em> make sure to check
+	  <strong>Make Anaconda the default Python</strong>.
 	</li>
       </ul>
     </div>
-    <div class="span4">
+    <div class="col-md-4">
       <h4>Mac OS X</h4>
       <ul>
 	<li>
@@ -489,13 +490,12 @@ eventbrite: 15640161143
           install <a href="https://store.continuum.io/cshop/anaconda/">Anaconda</a>.
 	</li>
 	<li>
-          Use all of the defaults for installation
-          <em>except</em>
-          make sure to check <strong>Make Anaconda the default Python</strong>.
+          Download the default Python 2 installer (do not follow the link to version 3).
+	  Use all of the defaults for installation.
 	</li>
       </ul>
     </div>
-    <div class="span4">
+    <div class="col-md-4">
       <h4>Linux</h4>
       <p>
 	We recommend the all-in-one scientific Python installer
@@ -509,6 +509,7 @@ eventbrite: 15640161143
 	<li>
           Download the installer that matches your operating
           system and save it in your home folder.
+	  Download the default Python 2 installer (do not follow the link to version 3). 
 	</li>
 	<li>
           Open a terminal window.
@@ -545,8 +546,8 @@ eventbrite: 15640161143
     <a href="http://www.rstudio.com/">RStudio</a>.
   </p>
 
-  <div class="row-fluid">
-    <div class="span4">
+  <div class="row">
+    <div class="col-md-4">
       <h4>Windows</h4>
       <p>
 	Install R by downloading and running
@@ -556,7 +557,7 @@ eventbrite: 15640161143
 	<a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
       </p>
     </div>
-    <div class="span4">
+    <div class="col-md-4">
       <h4>Mac OS X</h4>
       <p>
 	Install R by downloading and running
@@ -566,7 +567,7 @@ eventbrite: 15640161143
 	<a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
       </p>
     </div>
-    <div class="span4">
+    <div class="col-md-4">
       <h4>Linux</h4>
       <p>
 	You can download the binary files for your distribution
@@ -593,8 +594,8 @@ eventbrite: 15640161143
     <a href="http://www.sqlite.org/">SQLite</a> in our lessons.
   </p>
 
-  <div class="row-fluid">
-    <div class="span4">
+  <div class="row">
+    <div class="col-md-4">
       <h4>Windows</h4>
       <p>
 	Download the <a href="{{site.swc_files}}/sqlite3.exe">sqlite3
@@ -602,13 +603,13 @@ eventbrite: 15640161143
 	examples.
       </p>
     </div>
-    <div class="span4">
+    <div class="col-md-4">
       <h4>Mac OS X</h4>
       <p>
 	<code>sqlite3</code> comes pre-installed on Mac OS X.
       </p>
     </div>
-    <div class="span4">
+    <div class="col-md-4">
       <h4>Linux</h4>
       <p>
 	<code>sqlite3</code> comes pre-installed on Linux.
